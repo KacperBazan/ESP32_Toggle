@@ -32,7 +32,7 @@ void setup()
 
 void ToggleButton()
 {
-  if (millis() - curTime > td)
+  if (millis() - curTime > td) //Set a time delay to prevent immediate bouncing of the toggle value.
   {
     buttonState = digitalRead(button);
     if (buttonState != lastButtonState)
