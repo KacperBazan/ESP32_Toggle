@@ -13,9 +13,6 @@
  * Toggle Switch Info: https://www.arduino.cc/en/Tutorial/BuiltInExamples/StateChangeDetection
  */
 
-
-//LOL this is a test to see if github immediately sees this and wants to change
-
 const int led = 2;
 const int button = 4;
 int toggle = 0;
@@ -40,9 +37,9 @@ void ToggleButton()
     buttonState = digitalRead(button);
     if (buttonState != lastButtonState)
     {
-      if(buttonState == HIGH)
+      if (buttonState == HIGH)
       {
-        toggle = !toggle; 
+        toggle = !toggle;
       }
     }
     lastButtonState = buttonState;
